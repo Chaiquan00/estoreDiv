@@ -26,8 +26,8 @@ public class CustomerServlet extends HttpServlet {
         super.destroy();
     }
 
-    public void init() throws ServletException {
-    }
+//    public void init() throws ServletException {
+//    }
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -47,13 +47,17 @@ public class CustomerServlet extends HttpServlet {
 
         String action = request.getParameter("action");
 
-        if (action.equals("userLogin")) {// 登录
-            this.login(request, response);
-        } else if (action.equals("logout")) {
-            session.invalidate();
-            request.getRequestDispatcher("/ProductServlet?action=selectAllProduct&pageNum=0").forward(request, response);
-        } else if (action.equals("userRegister")) {
-            this.userRegister(request, response);
+        switch (action) {
+            case "userLogin":
+                this.login(request, response);
+                break;
+            case "logout":
+                session.invalidate();
+                request.getRequestDispatcher("/ProductServlet?action=selectAllProduct&pageNum=0").forward(request, response);
+                break;
+            case "userRegister":
+                this.userRegister(request, response);
+                break;
         }
     }
 

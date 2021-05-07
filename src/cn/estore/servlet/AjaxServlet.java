@@ -24,7 +24,7 @@ public class AjaxServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
 
-        // 获取是何种操作的参数action
+
         String action = request.getParameter("action");
 
         if ("checkUsername".equals(action)) {
@@ -35,10 +35,10 @@ public class AjaxServlet extends HttpServlet {
     }
 
     public void checkUserName(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 获得一个输出流,用来响应客户端发出的请求
+
         PrintWriter out = response.getWriter();
 
-        // 创建dao对象
+
         CustomerDao dao = new CustomerDao();
 
         String username = request.getParameter("username");
