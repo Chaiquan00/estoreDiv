@@ -1,0 +1,96 @@
+/*中间左边*/
+.left {
+    width: 300px;
+    float: left;
+}
+
+.search-product {
+    width: 300px;
+    height: 152px;
+    position: relative;
+    background: url(../images/systemImages/fg_left00.jpg);
+}
+
+/*搜索框*/
+.search-product form input {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+.search-product form label {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.search-product form input[type=text] {
+    height: 18px;
+}
+
+.search-product form input[type=image] {
+    left: 200px;
+}
+
+/*登录成功前*/
+
+/*登录框*/
+.login {
+    width: 300px;
+    height: 140px;
+    position: relative;
+    background-image: url(../images/systemImages/fg_left01.jpg);
+}
+
+/*登录界面的输入框*/
+.login form div input {
+    width: 135px;
+}
+
+.username-login {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.password-login {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.login-button {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.login-button input[type=image] {
+    width: 49px;
+    height: 19px;
+}
+
+
+/*登陆成功后*/
+.showUsername {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.showRealName {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+}
+
+.quit {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+
+
+
+

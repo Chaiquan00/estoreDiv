@@ -1,0 +1,23 @@
+/*
+    注册
+*/
+.container .registerForm div {
+    width: 600px;
+    margin-left: 350px;
+    line-height: 50px;
+}
+
+.container .registerForm div input[type=text], input[type=password] {
+    width: 160px;
+}
+
+.container .registerForm div span {
+    color: red;
+    margin-left: 50px;
+    font-size: 10px;
+}
+
+.register-button {
+    position: relative;
+    left: -60px;
+}
